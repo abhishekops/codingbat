@@ -7,9 +7,7 @@
 # string_match('abc', 'axc') → 0
 
 def string_match(a, b):
-    len_a = len(a)
-    len_b = len(b)
-    index = len_a if len_a < len_b else len_b
+    index = min(len(a), len(b))
     count = 0
 
     for i in range(index-1):
