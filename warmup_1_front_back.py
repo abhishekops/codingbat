@@ -8,4 +8,4 @@ def front_back(str):
     l = len(str)
     if l == 1:
         return str
-        return str[-1:] + str[1:l-1] + str[:1]
+    return str[-1:] + str[1:l-1] + str[:1]
